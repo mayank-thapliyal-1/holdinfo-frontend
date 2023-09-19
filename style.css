@@ -64,7 +64,7 @@ a {
   justify-content: center;
   align-items: center;
   color: rgb(61, 198, 193);
-  border: 2px solid  rgb(61, 198, 193);
+  border: 2px solid rgb(61, 198, 193);
   width: 2rem;
   height: 2rem;
 }
@@ -87,7 +87,21 @@ a {
   font-weight: 300;
 }
 .dark-mode {
-  color: white;
+  display: flex;
+justify-content: space-between;
+  padding: 5px;
+  height: 2rem;
+  width: 4.5rem;
+  background-color: rgb(46, 50, 65);
+  border-radius: 25px;
+}
+
+.dark-mode-button {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(61, 198, 193);
+  border-radius: 100%;
 }
 /*------*/
 /* main */
@@ -182,11 +196,11 @@ table {
   font-weight: bold;
 }
 
-.loss{
+.loss {
   color: orangered;
 }
 
-.profit{
+.profit {
   color: aquamarine;
 }
 
@@ -241,14 +255,14 @@ td:last-child {
     font-weight: 300;
     font-size: small;
   }
-  .nav-right{
+  .nav-right {
     gap: 15px;
   }
-  .timer{
-    border: 1px solid ;
+  .timer {
+    border: 1px solid;
     font-size: small;
   }
-  .dark-mode{
+  .dark-mode {
     font-size: small;
   }
   .main-heading {
@@ -286,16 +300,15 @@ td:last-child {
     padding: 0%;
     margin-right: 5px;
   }
-  .table-header{
+  .table-header {
     font-size: x-small;
   }
-  
-  .table-data{
-   
+
+  .table-data {
     font-size: x-small;
     padding: 5px 10px;
   }
-  .table{
+  .table {
     padding: 2%;
   }
 }
