@@ -1,5 +1,5 @@
 async function getData() {
-  const response = await fetch("http://localhost:4000/fetchData");
+  const response = await fetch("https://crypto-data.onrender.com/fetchData");
   const data = await response.json();
 
   const tbody = document.querySelector("#cripto_table");
