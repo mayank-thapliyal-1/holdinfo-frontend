@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+body {
+  background-color: rgb(25, 29, 40);
+  font-family: "Oswald";
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 47px;
+}
+h2 {
+  margin: 0%;
+}
+h4 {
+  margin: 0%;
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
+}
+/* ---- */
+/* nav  */
+/* ---- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  object-fit: contain;
+  height: 7rem;
+  width: 17rem;
+  padding-left: 3rem;
+  padding-right: 6rem;
+}
+.nav-heading {
+  padding: 0 20px;
+  padding-right: 13rem;
+  color: rgb(107, 202, 203);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: xx-large;
+}
+.nav-center {
+  gap: 20px;
+  display: flex;
+}
+.nav-button {
+  cursor: pointer;
+  padding: 6px 25px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 50, 65);
+  font-weight: 300;
+}
+.nav-right {
+  padding-right: 4rem;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.timer {
+  color: white;
+}
+.nav-button-connect {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(61, 198, 193);
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.nav-image {
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
+}
+.nav-button-name {
+  color: white;
+  font-weight: 300;
+}
+.dark-mode {
+  color: white;
+}
+/*------*/
+/* main */
+/*------*/
+.main {
+  text-align: center;
+  padding: 0%;
+  color: rgb(128, 131, 136);
+}
+.main-heading {
+  font-weight: 200;
+  font-size: xx-large;
+}
+/*---------*/
+/*  hero   */
+/*---------*/
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-value {
+  font-weight: 300;
+  color: rgb(61, 198, 193);
+  font-size: 3rem;
+}
+.hero-para {
+  color: rgb(128, 131, 136);
+  text-align: center;
+  font-size: larger;
+}
+.hero-left {
+  display: flex;
+  gap: 5rem;
+}
+.hero-center {
+  text-align: center;
+}
+.hero-center-value {
+  padding-top: 1rem;
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.hero-center-para {
+  padding: 1rem;
+  color: rgb(128, 131, 136);
+  font-size: large;
+}
+.hero-right {
+  display: flex;
+  gap: 5rem;
+}
+/* ------- */
+/*  table  */
+/* ------- */
+.table {
+  padding: 0 2rem;
+  overflow-y: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  border: none;
+}
+
+.table-header-row {
+  margin-bottom: 0%;
+  padding: 0%;
+}
+.table-header {
+  color: rgb(128, 131, 136);
+  font-size: x-large;
+  font-weight: 100;
+  padding-top: 12px;
+  padding-bottom: 0%;
+  padding: 0%;
+  text-align: center;
+}
+
+.table-row {
+  background-color: rgb(46, 50, 65);
+}
+
+.table-data {
+  color: white;
+  font-size: x-large;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loss{
+  color: orangered;
+}
+
+.profit{
+  color: aquamarine;
+}
+
+td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+.hider {
+  position: fixed;
+  height: 47px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  background: rgb(25, 29, 40);
+}
+/*--------------*/
+/*  media Query */
+/*--------------*/
+
+@media (min-width: 360px) and (max-width: 800px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-logo {
+    width: 15rem;
+    height: 2rem;
+    padding: 0%;
+    padding-top: 10px;
+  }
+  .nav-button {
+    padding: 5px 10px;
+    font-size: small;
+  }
+  .nav-right {
+    padding: 0%;
+    padding: 10px;
+    gap: 5px;
+  }
+  .nav-button-connect {
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .nav-image {
+    height: 10px;
+    width: 15px;
+  }
+  .nav-button-name {
+    font-weight: 300;
+    font-size: small;
+  }
+  .timer{
+    font-size: small;
+  }
+  .dark-mode{
+    font-size: small;
+  }
+  .main-heading {
+    font-size: small;
+  }
+  .hero {
+    justify-content: center;
+  }
+  .hero-center {
+    padding: 0%;
+  }
+  .hero-center-value {
+    font-size: medium;
+    padding: 0%;
+  }
+  .hero-center-para {
+    font-size: xx-small;
+    padding: 0%;
+    width: fit-content;
+  }
+
+  .hero-value {
+    font-size: x-small;
+  }
+  .hero-para {
+    font-size: xx-small;
+  }
+  .hero-right {
+    gap: 10px;
+    padding: 0%;
+    margin-left: 5px;
+  }
+  .hero-left {
+    gap: 10px;
+    padding: 0%;
+    margin-right: 5px;
+  }
+  .table-header{
+    font-size: x-small;
+  }
+  .table-data{
+    font-size: x-small;
+    padding: 10px 20px;
+  }
+  .table{
+    padding: 2%;
+  }
+}

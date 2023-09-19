@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div>
+        <img class="nav-logo" src="image/HODLINFO-dark.png" alt="" />
+        <!-- <h1 class="nav-heading">holdinfo</h1> -->
+      </div>
+      <div class="nav-center">
+        <span class="nav-button">INR</span>
+        <span class="nav-button">BTC </span>
+        <span class="nav-button">Buy BTC</span>
+      </div>
+      <div class="nav-right">
+        <span class="timer">timer</span>
+        <a href="telegram.html">
+          <span class="nav-button-connect"
+            ><img class="nav-image" src="image/icon.png" alt="" />
+            <pr class="nav-button-name">Connect Telegram</pr>
+          </span></a
+        >
+        <span class="dark-mode">dark mode</span>
+      </div>
+    </nav>
+    <div class="main"><h2 class="main-heading">Best Price to Trade</h2></div>
+    <div class="hero">
+      <div class="hero-left">
+        <span class="hero-data">
+          <div class="hero-value">0.34%</div>
+          <div class="hero-para">5 Mins</div>
+        </span>
+        <span class="hero-data">
+          <div class="hero-value">1.95%</div>
+          <div class="hero-para">1 Hour</div>
+        </span>
+      </div>
+      <div class="hero-center">
+        <div class="hero-center-value">₹24,35,933</div>
+        <div class="hero-center-para">
+          Average BTC/INR net price including commission
+        </div>
+      </div>
+      <div class="hero-right">
+        <span class="hero-data">
+          <div class="hero-value">2.33%</div>
+          <div class="hero-para">1 Day</div>
+        </span>
+        <span class="hero-data">
+          <div class="hero-value">5.06%</div>
+          <div class="hero-para">7 Days</div>
+        </span>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead class="table-heading">
+          <tr class="table-header-row">
+            <th class="table-header"><h4>#</h4></th>
+            <th class="table-header">
+              <h4><span>Platform</span></h4>
+            </th>
+            <th class="table-header">
+              <h4><span>Last Traded price</span></h4>
+            </th>
+            <th class="table-header">
+              <h4><span> Buy / Sell Price </span></h4>
+            </th>
+            <th class="table-header">
+              <h4><span> Difference </span></h4>
+            </th>
+            <th class="table-header">
+              <h4><span> Savings</span></h4>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="cripto_table"></tbody>
+      </table>
+    </div>
+    <div class="hider"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
