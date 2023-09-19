@@ -59,7 +59,14 @@ a {
   align-items: center;
 }
 .timer {
-  color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(61, 198, 193);
+  border: 2px solid  rgb(61, 198, 193);
+  width: 2rem;
+  height: 2rem;
 }
 .nav-button-connect {
   cursor: pointer;
@@ -234,7 +241,11 @@ td:last-child {
     font-weight: 300;
     font-size: small;
   }
+  .nav-right{
+    gap: 15px;
+  }
   .timer{
+    border: 1px solid ;
     font-size: small;
   }
   .dark-mode{
@@ -278,9 +289,11 @@ td:last-child {
   .table-header{
     font-size: x-small;
   }
+  
   .table-data{
+   
     font-size: x-small;
-    padding: 10px 20px;
+    padding: 5px 10px;
   }
   .table{
     padding: 2%;
